@@ -1,6 +1,6 @@
 # Web 2.2 Group Repository
 
-Welcome to the Web 2.0 Group Repository! This repository is designed to help you learn and practice JavaScript concepts from scratch through classworks, exercises, and curated resources.
+Welcome to the Web 2.2 Group Repository! This repository is designed to help you learn and practice JavaScript concepts from scratch through classworks, exercises, and curated resources.
 
 ## Repository Structure
 
