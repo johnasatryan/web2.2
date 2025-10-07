@@ -48,12 +48,10 @@
 
 // string // utf-8
 
-console.log('hello'.toUpperCase());
-
 // char ch = 'a';
 // int x = int(ch); -> implicit cast
 
-let x = 12;
+// let x = 12;
 
 // console.log(typeof String(x));
 
@@ -64,3 +62,6 @@ let x = 12;
 // for (var i = 0; i < size / 2; ++i) {
 //   console.log('hello world');
 // }
+
+var x = 0;
+console.log(Number('       43       '));

@@ -3,13 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
+    <title>Document</title>
   </head>
   <body>
-    <button>Click me</button>
+    <h1>Hello world</h1>
+    <button id="btn">Click me</button>
     <script>
-      var x = 13;
-      var y = 12;
+      // vorpes C Struct
+      function MyCustomObject() {
+        this.number = 3;
+        this.float = 3.15;
+        this.string = 'some string';
+        this.true = true;
+        this.false = false;
+        this.bigint = 3n;
+        this.symbol = Symbol(34);
+        this.object1 = { name: 'James' };
+        this.object2 = { name: 'James', age: 23 };
+        this.array = [];
+        this.undefined = undefined;
+        this.null = null;
+        this.nan = NaN;
+      }
+
+      const btn = document.getElementById('btn');
+      btn.onclick = function () {
+        // var obj1 = new MyCustomObject();
+        obj = new MyCustomObject();
+      };
     </script>
   </body>
 </html>
