@@ -2,10 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Debugging Example</title>
   </head>
   <body>
-    <script src="js_object.js"></script>
+    <h1>Open Console to Debug</h1>
+    <script>
+      function foo() {
+        let x = 23;
+        let a = 'hello';
+        function bar() {
+          let y = 24;
+          console.log(y);
+          debugger;
+
+          console.log(a);
+          console.log(x);
+        }
+
+        return bar;
+      }
+      const newFunction = foo();
+      debugger;
+
+      newFunction();
+    </script>
   </body>
 </html>
