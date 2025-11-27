@@ -38,7 +38,7 @@ typedef struct JSProperty {
 typedef struct JSObject {
   JSProperty *properties;
   size_t propertyCount;
-  struct JSObject *prototype;
+  struct JSObject *__proto__;
 } JSObject;
 
 void greet() {
@@ -90,7 +90,10 @@ int main()
   object_properties[0].key = "toString";
   object_properties[0].value.type = JS_FUNCTION;
   object_properties[0].value.functionValue = &toString;
-
+  
+  object_properties[1].key = "prototype";
+  object_properties[1].value.type = JS_OBJECT;
+  object_properties[0].value.objectValue = NULL;
   JSObject *Object = (JSObject *)malloc(sizeof(JSObject));
 
   Object->properties = object_properties;
